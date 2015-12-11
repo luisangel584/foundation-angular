@@ -1,12 +1,12 @@
 [{
-	'item': '57913486',
-	'product': 'Refresco',
-	'presentation': '355ml',
-	'price': '18'
+	"item": "57913486",
+	"product": "Refresco",
+	"presentation": "355ml",
+	"price": "18"
 },
 {
-	'item': '47896215',
-	'product': 'Sabrita',
-	'presentation': '50g',
-	'price': '20'
+	"item": "47896215",
+	"product": "Sabrita",
+	"presentation": "50g",
+	"price": "20"
 }]
