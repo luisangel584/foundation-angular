@@ -1,0 +1,43 @@
+<div class="small-9 columns">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="row">
+				<div class="small-8 columns">
+					<input type="text" placeholder="Producto" ng-model="query">
+				</div>
+				<div class="small-2 columns">
+					<i class="fi-magnifying-glass button expanded"></i>
+				</div>
+				<div class="small-2 columns"></div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 columns">
+			<table class="responsive" ng-controller="ListCtrl">
+				<thead>
+					<tr>
+						<th width="150">Item</th>
+						<th width="100">Cantidad</th>
+						<th width="200">Producto</th>
+						<th width="200">Presentación</th>
+						<th width="150">Precio</th>
+						<th>Guardar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="lista in listas | filter:query">
+						<td>{{ lista.item }}</td>
+						<td><input type="number" id="cantidad"></td>
+						<td>{{ lista.product }}</td>
+						<td>{{ lista.presentation }}</td>
+						<td>{{ lista.price | currency}}</td>
+						<td class="text-center" ng-click="guardar()">
+							<i class="fi-save button expanded"></i>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
