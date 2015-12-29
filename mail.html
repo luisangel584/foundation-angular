@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mail</title>
+</head>
+<body>
+	<textarea id="myText">
+    Lorem ipsum...
+</textarea>
+<button onclick="sendMail(); return false">Send</button>
+
+<script>
+	function sendMail() {
+    var link = "luis_angel584@hotmail.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + escape("This is my subject")
+             + "&body=" + escape(document.getElementById('myText').value)
+    ;
+
+    window.location.href = link;
+}
+</script>
+</body>
+</html>

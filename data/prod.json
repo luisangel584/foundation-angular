@@ -1,0 +1,25 @@
+{
+	"products":[
+		{
+			"id": 1,
+			"item": "57913486",
+			"product": "Refresco",
+			"presentation": "355ml",
+			"price": "18"
+		},
+		{
+			"id": 2,
+			"item": "47896215",
+			"product": "Sabrita",
+			"presentation": "50g",
+			"price": "20"
+		},
+		{
+			"id": 3,
+			"item": "77265143",
+			"product": "Galletaa",
+			"presentation": "95g",
+			"price": "15"
+		}
+	]
+}

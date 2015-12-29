@@ -15,4 +15,21 @@ listApp.controller('ListCtrl', function($scope, $http){
 			console.log("Nada agregado");
 		}
 	};
+	
+	$scope.add = function(i, q){		
+		$scope.listas.push({ 'name':$scope.listas[i-1].item, 'cantidad': q });
+		// Writing it to the server
+		//		
+		var dataObj = {
+				name : $scope.listas[i-1].item,
+				cantidad : q
+		};	
+		var res = $http.post('data/prod.json', dataObj);
+		res.success(function(data, status, headers, config) {
+			$scope.message = data;
+		});
+		res.error(function(data, status, headers, config) {
+			alert( "failure message: " + JSON.stringify({data: data}));
+		});
+	};
 });
